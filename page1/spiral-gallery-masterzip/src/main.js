@@ -51,6 +51,7 @@ function openProject(idx) {
     overlayLink.style.display = 'none';
   }
   overlay.classList.add('is-open');
+  cursorEl.classList.remove('is-pointer');
   document.body.style.overflow = 'hidden';
 }
 

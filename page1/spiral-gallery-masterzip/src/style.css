@@ -23,12 +23,15 @@
 	--font-mono: 'DM Mono', monospace;
 }
 
+* {
+	cursor: none !important;
+}
+
 html,
 body {
 	width: 100%;
 	height: 100%;
 	background: var(--bg);
-	cursor: none;
 	overflow: hidden;
 }
 
