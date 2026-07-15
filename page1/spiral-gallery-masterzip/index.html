@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spiral Gallery</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/src/style.css" />
+	</head>
+	<body>
+		<canvas id="gl-canvas"></canvas>
+
+		<div class="scroll-container">
+			<div class="scroll-content"></div>
+		</div>
+
+		<!-- Loader -->
+	<div class="loader" id="js-loader">
+		<div class="loader__bar"><div class="loader__fill" id="js-loader-fill"></div></div>
+		<span class="loader__count" id="js-loader-count">0 / 12</span>
+	</div>
+
+	<!-- Project overlay -->
+	<div class="overlay" id="js-overlay">
+		<div class="overlay__panel">
+			<button class="overlay__close" id="js-overlay-close" aria-label="Close">&#x2715;</button>
+			<div class="overlay__image-wrap">
+				<img class="overlay__image" id="js-overlay-img" alt="" />
+			</div>
+			<div class="overlay__content">
+				<p class="overlay__year" id="js-overlay-year"></p>
+				<h2 class="overlay__title" id="js-overlay-title"></h2>
+				<p class="overlay__desc" id="js-overlay-desc"></p>
+				<div class="overlay__tags" id="js-overlay-tags"></div>
+				<a class="overlay__link" id="js-overlay-link" target="_blank" rel="noopener">View Project ↗</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="custom-cursor" id="js-cursor"></div>
+	<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
