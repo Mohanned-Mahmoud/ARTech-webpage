@@ -135,6 +135,11 @@ body {
 	transform: translate(-50%, -50%) scale(1.2);
 }
 
+@media (hover: none), (pointer: coarse) {
+	.custom-cursor { display: none; }
+	* { cursor: auto !important; }
+}
+
 /* ── Project overlay ─────────────────────────────────────────────── */
 .overlay {
 	position: fixed;
